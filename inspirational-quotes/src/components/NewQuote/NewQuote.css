@@ -1,0 +1,19 @@
+textarea {
+  margin: 3rem 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  font-size: 20px;
+  background-color: #f5daa7;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button {
+  font-size: 20px;
+  margin: 2rem;
+}
