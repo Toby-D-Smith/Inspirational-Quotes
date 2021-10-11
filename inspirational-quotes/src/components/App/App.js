@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import Quote from "./components/Quote/Quote";
-import Refresh from "./components/Refresh/Refresh";
-import Newquote from "./components/Newquote/Newquote";
-import Line from "./components/Line/Line";
-import Title from "./components/Title/Title";
-
+import Quote from "../Quote/Quote";
+import Title from "../Title/Title";
+import Refresh from "../Refresh/Refresh";
+import Line from "../Line/Line";
+import NewQuote from "../NewQuote/NewQuote";
 function App() {
   const [currentQuote, setCurrentQuote] = useState();
   const [dadJoke, setDadJoke] = useState();
@@ -64,7 +63,7 @@ function App() {
       <Quote quote={currentQuote}></Quote>
       <Refresh updateQuote={updateQuote}></Refresh>
       <Line></Line>
-      <Newquote setCurrentQuote={setCurrentQuote}></Newquote>
+      <NewQuote setCurrentQuote={setCurrentQuote}></NewQuote>
     </div>
   );
 }

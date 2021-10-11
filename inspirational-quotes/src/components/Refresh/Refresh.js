@@ -1,5 +1,4 @@
 import React from "react";
-import "./Refresh.css";
 
 const Refresh = ({ updateQuote }) => {
   return (
