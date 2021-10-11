@@ -1,0 +1,30 @@
+{
+  "name": "Inspirational-Quotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix inspirational-quotes",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toby-D-Smith/Inspirational-Quotes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toby-D-Smith/Inspirational-Quotes/issues"
+  },
+  "homepage": "https://github.com/Toby-D-Smith/Inspirational-Quotes#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.10",
+    "nodemon": "^2.0.13"
+  }
+}
