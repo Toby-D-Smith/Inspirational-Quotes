@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "install": "npm i --prefix inspirational-quotes",
     "server": "nodemon server.js",
     "client": "npm start --prefix inspirational-quotes",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run install\""
   },
   "repository": {
     "type": "git",
