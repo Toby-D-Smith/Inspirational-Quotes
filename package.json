@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "install": "npm i --prefix inspirational-quotes",
+    "i": "npm i --prefix inspirational-quotes",
+    "i2": "npm i",
+    "install": "concurrently \"npm run i\" \"npm run i2\"",
     "server": "nodemon server.js",
     "client": "npm start --prefix inspirational-quotes",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run install\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
