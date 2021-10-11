@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./NewQuote.css";
 
-const Newquote = ({ setCurrentQuote }) => {
+const Newquote = ({ setCurrentQuote, getQuotes }) => {
   const [newQuote, setNewQuote] = useState({
     quote: "",
     message: "",
   });
   async function register(event) {
     event.preventDefault();
-    setCurrentQuote(newQuote.quote);
     const body = JSON.stringify({
       quote: newQuote.quote,
     });
@@ -24,6 +23,7 @@ const Newquote = ({ setCurrentQuote }) => {
       ...newQuote,
       message: responce.data.message,
     });
+    setCurrentQuote(newQuote.quote);
   }
   return (
     <section>
